@@ -7,6 +7,7 @@ Passo 1: Definir as Classes
 ● Crie uma classe principal chamada “SistemaGerenciamentoEstudantes” que
 será responsável por iniciar o programa e interagir com o usuário pelo
 console.
+
 ● Crie uma classe “Estudante” para representar os dados de cada estudante,
 com atributos como nome, ID e curso, e métodos construtores, getters e
 setters.
