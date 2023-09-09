@@ -3,7 +3,7 @@ package Model;
 import java.util.UUID;
 
 public class Estudante {
-//private final UUID uuid = UUID.randomUUID();
+private final UUID uuid = UUID.randomUUID();
 	private String nome;
 	private Integer id;
 	private String curso;
