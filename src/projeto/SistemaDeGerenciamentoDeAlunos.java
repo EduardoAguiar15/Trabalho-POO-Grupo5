@@ -1,13 +1,7 @@
 package projeto;
 
 import View.Menu;
-import java.sql.Connection;
-import java.util.ArrayList;
-import java.util.Random;
-import java.util.Scanner;
 
-import Data.BancoDeDados;
-import Model.Estudante;
 
 public class SistemaDeGerenciamentoDeAlunos {
 

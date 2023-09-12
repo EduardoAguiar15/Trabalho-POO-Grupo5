@@ -15,7 +15,7 @@ public class Menu {
 	public Menu() {
 
 		ArrayList<Estudante> estudantes = Estudante.organizarEstudantes(50);
-		//Connection conexao = (Connection) BancoDeDados.obterConexao();
+		Connection conexao = (Connection) BancoDeDados.obterConexao();
 
 		scanner = new Scanner(System.in);
 	}
