@@ -20,16 +20,13 @@ public class Menu {
 		scanner = new Scanner(System.in);
 	}
 
-	
 	@Override
 	public String toString() {
 		return "Menu [bancoDeDados=" + bancoDeDados + ", scanner=" + scanner + "]";
 	}
 
-
 	public void exibirMenu() {
 		boolean continuar = true;
-		
 
 		while (continuar) {
 			System.out.println("\nMenu de Opções:");
@@ -66,59 +63,57 @@ public class Menu {
 
 			} catch (Exception e) {
 				System.out.println("Erro: " + e.getMessage());
-				
+
 			}
-			
+
 		}
 		scanner.close();
 	}
-		
-		private void adicionarEstudante() {
-			try {
-				System.out.println("Nome: ");
-				String nome = scanner.nextLine();
-				
-				System.out.println("\nCurso: ");
-				String curso = scanner.nextLine();
-			
-				
-				System.out.println("Estudante adicionado com sucesso!");
-			}catch (Exception e) {
-				System.out.println("Erro ao adicionar estudante: " + e.getMessage());
-			}
+
+	private void adicionarEstudante() {
+		try {
+			System.out.println("Nome: ");
+			String nome = scanner.nextLine();
+
+			System.out.println("\nCurso: ");
+			String curso = scanner.nextLine();
+
+			System.out.println("Estudante adicionado com sucesso!");
+		} catch (Exception e) {
+			System.out.println("Erro ao adicionar estudante: " + e.getMessage());
 		}
-		
-		private void editarEstudante() {
-			try {
-				//if/else?
-			}catch (Exception e) {
-				System.out.println("Erro ao editar estudante: " + e.getMessage());
-				
-				
-			}
+	}
+
+	private void editarEstudante() {
+		try {
+			// if/else?
+		} catch (Exception e) {
+			System.out.println("Erro ao editar estudante: " + e.getMessage());
+
 		}
-		
-		private void removerEstudante() {
-			try {
-				//lógica
-				System.out.println("Estudante removido com sucesso.");
-			}catch (Exception e) {
-				System.out.println("Erro ao remover estudante: " + e.getMessage());
-			}
+	}
+
+	private void removerEstudante() {
+		try {
+			// lógica
+			System.out.println("Estudante removido com sucesso.");
+		} catch (Exception e) {
+			System.out.println("Erro ao remover estudante: " + e.getMessage());
 		}
-		
-		private void listarEstudantes() {
-			try {
-				//lógica
-				ArrayList<Estudante> estudantes = Estudante.organizarEstudantes(50);
-				System.out.println("Lista de estudantes: ");
-				for (Estudante e : estudantes) {
-					System.out.println(e.getNome() + e.getCurso());
-				
-				}
-			}catch (Exception e) {
-				System.out.println("Erro ao listar estudantes: " + e.getMessage());
+	}
+
+	private void listarEstudantes() {
+		try {
+			// lógica
+			ArrayList<Estudante> estudantes = Estudante.organizarEstudantes(50);
+			System.out.println("Lista de estudantes: ");
+			for (Estudante e : estudantes) {
+				System.out.println(e.getNome() + e.getCurso());
+
 			}
+		} catch (Exception e) {
+			System.out.println("Erro ao listar estudantes: " + e.getMessage());
 		}
-	
+	}
+
 }

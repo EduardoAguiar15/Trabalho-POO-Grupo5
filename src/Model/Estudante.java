@@ -72,6 +72,5 @@ public class Estudante {
 	public String toString() {
 		return "Estudante [id=" + id + ", nome=" + nome + ", curso=" + curso + "]";
 	}
-	
 
 }
