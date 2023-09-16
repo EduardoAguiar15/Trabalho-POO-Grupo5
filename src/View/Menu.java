@@ -34,7 +34,6 @@ public class Menu {
 			System.out.println("5. Sair");
 			System.out.print("\nEscolha uma opção: ");
 			String entrada = scanner.nextLine();
-			System.out.print("\n");
 
 			int resposta = 0;
 
@@ -42,7 +41,7 @@ public class Menu {
 				int escolha = Integer.parseInt(entrada);
 				switch (escolha) {
 				case 1:
-					chamar(resposta, () -> {
+					chamarMetodo(resposta, () -> {
 						try {
 							adicionarEstudante();
 						} catch (InterruptedException e) {
@@ -51,7 +50,7 @@ public class Menu {
 					});
 					break;
 				case 2:
-					chamar(resposta, () -> {
+					chamarMetodo(resposta, () -> {
 						try {
 							editarEstudante();
 						} catch (InterruptedException e) {
@@ -63,7 +62,7 @@ public class Menu {
 					});
 					break;
 				case 3:
-					chamar(resposta, () -> {
+					chamarMetodo(resposta, () -> {
 						try {
 							removerEstudante();
 						} catch (InterruptedException e) {
@@ -75,7 +74,7 @@ public class Menu {
 					});
 					break;
 				case 4:
-					chamar(resposta, () -> {
+					chamarMetodo(resposta, () -> {
 						try {
 							listarEstudantes();
 						} catch (InterruptedException e) {
@@ -101,7 +100,7 @@ public class Menu {
 		scanner.close();
 	}
 
-	private void chamar(int resposta, RealizarAcao acao) {
+	private void chamarMetodo(int resposta, RealizarAcao acao) {
 		acao.executarAcao();
 		while (resposta == 1 || resposta == 2 || resposta == 0) {
 			System.out.println("Continuar(1)  Voltar ao menu principal(2)");
@@ -266,8 +265,7 @@ public class Menu {
 					System.out.println("Nome: " + estudante.getNome());
 					System.out.println("Curso: " + estudante.getCurso());
 					System.out.println();
-					Thread.sleep(250);
-
+					Thread.sleep(300);
 				}
 			}
 			System.out.println("\n/////////////////////////////////////////\n");
