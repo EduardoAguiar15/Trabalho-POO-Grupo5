@@ -41,6 +41,7 @@ capturando exceções como falhas na conexão ou consultas mal-sucedidas, e
 fornecendo feedback adequado ao usuário em caso de erros.
 
 Passo 5: Organização em Pacotes
+
 ● Organize seu código em pacotes, colocando a classe “Estudante” em um
 pacote chamado “model”, a classe “BancoDeDados” em um pacote chamado
 “data”, e a classe “Menu” em um pacote chamado “view”.
